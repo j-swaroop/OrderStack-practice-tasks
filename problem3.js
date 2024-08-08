@@ -9,11 +9,12 @@ function Stack() {
   return {
     top: null,
     totalSize: 0,
-
+    
     isBalanced(s) {
       // "{[()]}"  ")(][}{"
       const matchingBracket = { ")": "(", "}": "{", "]": "[" };
       for (const char of s) {
+        // console.log(char in matchingBracket, matchingBracket[char])
         if (char in matchingBracket) {
           // console.log(stack[stack.length - 1], matchingBracket[char])
           if (this.totalSize === 0 || this.top.data !== matchingBracket[char]) {
