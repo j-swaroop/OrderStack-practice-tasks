@@ -64,3 +64,4 @@ console.log(stack3.isBalanced("a[b{c}d]e(f)g")); // Output: true
 
 const stack4 = Stack();
 console.log(stack4.isBalanced(")(][}{")); // Output: false
+
