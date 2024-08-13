@@ -47,5 +47,6 @@ insertNode(stack, 60);
 insertNode(stack, 80);
 
 console.log(stack);
+
 console.log(search(stack, 22) !== null ? true : false); // false
 console.log(search(stack, 80) !== null ? true : false); // true
